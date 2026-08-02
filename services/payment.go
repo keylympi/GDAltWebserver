@@ -18,7 +18,7 @@ import (
 
 type PaymentRequest struct {
 	Type              string `json:"type"`
-	VerificationToken string `json:"verificationToken"`
+	VerificationToken string `json:"verification_token"`
 	Email             string `json:"email"`
 	DiscordUsername   string `json:"discord_username"`
 	DiscordUserID     string `json:"discord_userid"`
