@@ -78,7 +78,7 @@ func paymentHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Internal server error", http.StatusInternalServerError)
 		return
 	}
-	log.Done("payment: processed membership for %s", req.DiscordUsername)
+	log.Done("payment: processed membership for %s", req.Email)
 
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte("OK"))
